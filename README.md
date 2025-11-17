@@ -7,7 +7,7 @@ An exploratory data analysis (EDA) project using the FIFA 21 Complete Player Dat
 This project analyzes 18,944 players and 106 attributes from the FIFA 21 dataset.
 Our team explored player performance trends, relationships between key features, and squad values across top clubs.
 
---🧹 Data Cleaning & Wrangling
+🧹 Data Cleaning & Wrangling
 
 Before analysis, the dataset required extensive preprocessing:
 
@@ -61,7 +61,7 @@ Top 10 most valuable squads (Bar Chart)
 All plots are available in the notebook.
 
 🛠 Technologies Used
-
+-
 Python
 
 Pandas
