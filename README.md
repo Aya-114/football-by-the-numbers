@@ -1,76 +1,78 @@
-FIFA 21 Player Analysis
-Overview
+FIFA 21 Players Data Analysis
 
-This project explores the FIFA 21 Complete Player Dataset, containing 18,944 players and 106 attributes, to uncover insights about player performance, talent distribution, and club value. The analysis was performed by our team, focusing on data cleaning, exploratory data analysis (EDA), and visualization.
+An exploratory data analysis (EDA) project using the FIFA 21 Complete Player Dataset to uncover insights about player performance, talent distribution, market value, and club squad strength.
+---
+📌 Project Overview
 
-Goals
+This project analyzes 18,944 players and 106 attributes from the FIFA 21 dataset.
+Our team explored player performance trends, relationships between key features, and squad values across top clubs.
+---
+🧹 Data Cleaning & Wrangling
 
-The project aims to answer three main questions:
+Before analysis, the dataset required extensive preprocessing:
 
-Which countries produce the best players?
+✔ Missing Values
 
-How are age, potential, and market value related?
+Some columns contained 16,000+ missing values, others around 1,000.
+We evaluated whether to remove or impute them depending on column importance.
 
-Which clubs have the most valuable squads?
+✔ Converting Financial Data
 
-Dataset
+Converted value_eur and wage_eur from string formats like "€120K" or "€90M" into numerical float values for proper analysis.
 
-Source: FIFA 21 Complete Player Dataset on Kaggle
+✔ Removing Outliers
 
-Size: 18,944 players × 106 columns
+Outliers in Age and Overall Rating were detected and removed to improve the reliability of visualizations.
 
-Key columns include: age, overall, potential, value_eur, wage_eur, nationality, club_name, player_positions, pace, shooting, passing, etc.
+✔ Standardizing Categories
 
-Data Cleaning & Wrangling
+Unified position labels
 
-The raw dataset required significant preprocessing:
+Standardized nation names
 
-Converted value_eur and wage_eur from strings (e.g., "€120K") to numerical floats
+✔ Removing Duplicate Players
 
-Handled missing values: some columns had ~16,000 missing values, others ~1,000; decisions were made to delete or impute depending on relevance
+Identified and removed duplicate player records based on unique identifiers.
 
-Removed outliers in age and overall
+📊 Key Questions Explored
+-
+1️⃣ Which countries produce the best players (based on Overall rating)?
 
-Standardized player positions and nationality names
+We grouped players by nationality and found the Top 10 countries by average overall rating.
 
-Detected and removed duplicate player records
+2️⃣ What is the relationship between Age, Potential, and Market Value?
 
-Exploratory Data Analysis (EDA)
+Using scatter plots & correlation matrices, we uncovered trends between development and player valuation.
 
-Top countries by player quality:
+3️⃣ Which clubs have the most valuable squads?
 
-Brazil, Czech Republic, Portugal, and Croatia led in average overall rating.
+Aggregated player market values to rank clubs by total squad worth.
 
-Age, potential, and market value relationships:
+📈 Visualizations Included
 
-Younger players with high potential tend to have higher market values.
+Top 10 countries by average overall (Bar Chart)
 
-Veteran players’ value depends on performance and market demand.
+Age vs Potential with Market Value (Gradient Scatter Plot)
 
-Most valuable squads by club:
+Correlation Matrix of key variables (Heatmap)
 
-Some famous clubs weren’t as valuable as expected.
+Top 10 most valuable squads (Bar Chart)
 
-Lesser-known clubs sometimes dominated the total squad value rankings.
+All plots are available in the notebook.
 
-Visualizations
+🛠 Technologies Used
 
-Bar charts: Top countries by average overall rating, Top clubs by total squad value
+Python
 
-Scatter plots: Age vs. potential, with overall as color and market value as size
+Pandas
 
-Correlation heatmaps: Showed relationships between age, overall, potential, value_eur, and wage_eur
+NumPy
 
-Key Insights
+Matplotlib
 
-Data can challenge common assumptions in football.
+Seaborn
 
-Market value often favors younger players with high potential.
+Jupyter Notebook
 
-Club popularity doesn’t always reflect squad value.
 
-Technologies Used
-
-Python: Pandas, NumPy, Matplotlib, Seaborn
-
-Jupyter Notebook for interactive analysis and visualizations
+⭐ If you find this project useful, feel free to star the repo!
