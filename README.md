@@ -1,12 +1,12 @@
 FIFA 21 Players Data Analysis
-
+-
 An exploratory data analysis (EDA) project using the FIFA 21 Complete Player Dataset to uncover insights about player performance, talent distribution, market value, and club squad strength.
----
+
 📌 Project Overview
 
 This project analyzes 18,944 players and 106 attributes from the FIFA 21 dataset.
 Our team explored player performance trends, relationships between key features, and squad values across top clubs.
----
+
 🧹 Data Cleaning & Wrangling
 
 Before analysis, the dataset required extensive preprocessing:
